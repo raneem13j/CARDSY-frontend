@@ -1,0 +1,109 @@
+.popupRequest {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.621);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: 'translate(-50%,-50%';
+    z-index: 1000;
+}
+
+.popup-inner {
+    position: relative;
+    padding: 50px;
+    width: 350px;
+    background-color: #e7e7e7;
+    border-radius: 20px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+.followPopup1{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    color:#2c6487;
+}
+.followPopup2{
+    
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   text-decoration: none;
+   color:#2c6487;
+    
+  }
+  .followPopup2:hover{
+    cursor: pointer;
+    color: #f4b31a;
+  }
+
+
+  .followPopup2 h3{
+    margin-top: 8px;
+    
+  }
+  .userButtonPop{
+    padding: 5px;
+    margin: 5px;
+    color:#2c6487;
+    border:#f4b31a solid 2px;
+    border-radius: 12px;
+    
+
+}
+
+.userButtonPop:hover {
+    cursor: pointer;
+    color:white;
+   background-color: #2c6487;
+    
+   }
+
+.popup-inner .close-popup-icon{
+position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+
+    color: #f4b31a;
+
+    text-align: center;
+    cursor: pointer;
+    /* min-height: 44px; */
+    height: 30px;
+    line-height: 1.2;
+    vertical-align: top;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    text-transform: none;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    width: -moz-fit-content;
+    width: fit-content;
+
+}
+.submit-reuest-btn-form{
+    background: #A30000;
+        color: #ffffff;
+        border: 1px solid #A30000;
+        padding: 5px 20px;
+        text-align: center;
+        cursor: pointer;
+        line-height: 1.2;
+        vertical-align: top;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 20px;
+        text-transform: none;
+        border-radius: 30px;
+        transition: all 0.2s ease-in-out;
+        width: -moz-fit-content;
+        width: 10rem;
+}

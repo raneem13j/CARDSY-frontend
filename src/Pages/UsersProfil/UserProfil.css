@@ -1,0 +1,217 @@
+.userProfilPage{
+  margin-left: 200px;
+  padding: 1px 16px; 
+}
+
+.userProfilHr{
+    background-color: #f4b31a;
+    width: 1300px;
+    margin: 5px auto;
+    height: 4px;
+      
+}
+.userProfil3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.userdet5{
+    color:#2c6487;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 8px ;
+    text-align: center;
+   
+}
+.userProfilCard{
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+ 
+  
+}
+
+@media screen and (max-width: 1400px) {
+    .userProfilHr{
+        background-color: #f4b31a;
+        width: 1000px;
+        margin: 5px auto;
+        height: 4px;      
+    }
+    .userProfil3{
+        display: flex;
+       justify-content: space-around;  
+    }
+    .userProfilCard{
+        margin-top: 30px;
+        margin-left: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+       
+        
+      }
+      #userProfilC{
+        width: 350px;
+     }   
+}
+@media screen and (max-width: 1200px) {
+    .userProfilHr{
+        background-color: #f4b31a;
+        width: 900px;
+        margin: 5px auto;
+        height: 4px;      
+    }
+    .userProfil3{
+        display: flex;
+       justify-content: space-around;  
+    }
+    .userProfilCard{
+        margin-top: 30px;
+        margin-left: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        }
+     #userProfilC{
+        width: 300px;
+     }   
+}
+@media screen and (max-width: 1000px) {
+    .userProfilHr{
+        background-color: #f4b31a;
+        width: 600px;
+        margin: 5px auto;
+        height: 4px;      
+    }
+    .userProfil3{
+        display: flex;
+       justify-content: space-around;  
+    }
+    .userProfilCard{
+        margin-top: 30px;
+        margin-left: 50px;
+        display: grid;
+        grid-template-columns: 1fr ; 
+        }
+     #userProfilC{
+        width: 400px;
+     }  
+}
+@media screen and (max-width: 800px) {
+    .userProfilHr{
+        background-color: #f4b31a;
+        width: 600px;
+        margin: 5px auto;
+        height: 4px;      
+    }
+    .userProfil3{
+        display: flex;
+       justify-content: space-around;  
+    }
+    .userProfilCard{
+        margin-top: 30px;
+        margin-left: 90px;
+        display: grid;
+        grid-template-columns: 1fr; 
+        }
+     #userProfilC{
+        width: 300px;
+     }  
+}
+@media screen and (max-width: 700px) {
+    .userProfilPage {
+		margin-left: 0;
+	  }
+      .userProfilHr{
+        background-color: #f4b31a;
+        width: 500px;
+        margin: 5px auto;
+        height: 4px;      
+    }
+    .userProfil3{
+        display: flex;
+       justify-content: space-around;  
+    }
+    .userProfilCard{
+        margin-top: 30px;
+        margin-left: 50px;
+        display: grid;
+        grid-template-columns: 1fr; 
+        }
+     #userProfilC{
+        width: 400px;
+     }      
+}
+@media screen and (max-width: 500px) {
+    .userProfilPage {
+		margin-left: 0;
+	  }
+      .userProfilHr{
+        background-color: #f4b31a;
+        width: 350px;
+        margin: 5px auto;
+        height: 4px;      
+    }
+    .userProfil3{
+        display: flex;
+       justify-content: space-around;  
+    }
+    .userProfilCard{
+        margin-top: 30px;
+        margin-left: 10px;
+        display: grid;
+        grid-template-columns: 1fr; 
+        }
+     #userProfilC{
+        width: 300px;
+     }      
+}
+@media screen and (max-width: 400px) {
+    .userProfilPage {
+		margin-left: 0;
+	  }
+      .userProfilHr{
+        background-color: #f4b31a;
+        width: 270px;
+        margin: 5px auto;
+        height: 4px;      
+    }
+    .userProfil3{
+        display: flex;
+       justify-content: space-around;  
+    }
+    .userProfilCard{
+        margin-top: 30px;
+        margin-left: -20px;
+        display: grid;
+        grid-template-columns: 1fr; 
+        }
+     #userProfilC{
+        width: 200px;
+     }    
+}
+@media screen and (max-width: 320px) {
+    .userProfilPage {
+		margin-left: 0;
+	  }
+      .userProfilHr{
+        background-color: #f4b31a;
+        width: 250px;
+        margin: 5px auto;
+        height: 4px;      
+    }
+    .userProfil3{
+        display: flex;
+       justify-content: space-around;  
+    }
+    .userProfilCard{
+        margin-top: 10px;
+        margin-left: -30px;
+       
+        display: grid;
+        grid-template-columns: 1fr; 
+        }
+     #userProfilC{
+        width: 150px;
+     }  
+}

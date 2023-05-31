@@ -1,0 +1,45 @@
+.loSearch{
+ margin-top: 10px;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+ 
+
+}
+.searchLogo{
+    width:2.5rem;
+    height: 2.5rem;
+    
+}
+.loSearchLink{
+
+    text-decoration: none;
+    color:#2c6487;
+
+}
+.loSearchLink:hover{
+    cursor: pointer;
+    color: #f4b31a;
+   }
+  
+@media screen and (max-width: 700px) {
+
+    .searchLogo{
+        width:2rem;
+        height: 2rem;
+        padding-top: 3px;
+    }
+
+
+
+
+}
+@media screen and (max-width: 400px) {
+    .searchLogo{
+        width:2.5rem;
+        height: 2.5rem;
+        margin-top: 10px;
+    }
+
+
+}

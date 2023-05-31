@@ -1,0 +1,218 @@
+.myProfilPage {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
+.userdet {
+  color: #2c6487;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px auto;
+  text-align: center;
+}
+.myProfilInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn1 {
+  margin-left: 80px;
+}
+.btn2 {
+  margin-right: 80px;
+}
+.myProfilButton {
+  padding: 7px;
+  margin: 5px;
+  color: #2c6487;
+  border: #f4b31a solid 2px;
+  border-radius: 12px;
+}
+.myProfilButton:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #2c6487;
+}
+.cardLink {
+  text-decoration: none;
+  color: #2c6487;
+}
+.myProfilHr {
+  background-color: #f4b31a;
+  width: 1300px;
+  margin: 5px auto;
+  height: 4px;
+}
+.myProfilInfo2 {
+  text-align: center;
+}
+
+.posts-section2 {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.delete-icon {
+  color: #2c6487;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1400px) {
+  .posts-section2 {
+    margin-top: 20px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .myProfilHr {
+    background-color: #f4b31a;
+    width: 1000px;
+    margin: 5px auto;
+    height: 4px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .posts-section2 {
+    margin-top: 20px;
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .myProfilHr {
+    background-color: #f4b31a;
+    width: 800px;
+    margin: 5px auto;
+    height: 4px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .posts-section2 {
+    margin-top: 20px;
+    margin-left: 120px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .myProfilHr {
+    background-color: #f4b31a;
+    width: 600px;
+    margin: 5px auto;
+    height: 4px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .posts-section2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .myProfilHr {
+    background-color: #f4b31a;
+    width: 450px;
+    margin: 5px auto;
+    height: 4px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .myProfilPage {
+    margin-left: 0;
+  }
+  .posts-section2 {
+    margin-top: 20px;
+    margin-left: 90px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .myProfilHr {
+    background-color: #f4b31a;
+    width: 500px;
+    margin: 5px auto;
+    height: 4px;
+  }
+  .myProfilInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .myProfilPage {
+    margin-left: 0;
+  }
+  .posts-section2 {
+    margin-top: 20px;
+    margin-left: -20px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .myProfilHr {
+    background-color: #f4b31a;
+    width: 400px;
+    margin: 5px auto;
+    height: 4px;
+  }
+  .myProfilInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .myProfilPage {
+    margin-left: 0;
+  }
+
+  .posts-section2 {
+    margin-top: 20px;
+    margin-left: -25px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .myProfilHr {
+    background-color: #f4b31a;
+    width: 300px;
+    margin: 5px auto;
+    height: 4px;
+  }
+
+  #myProfilCard {
+    width: 250px;
+    height: 180px;
+  }
+  #myProfilCard2 {
+    width: 250px;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .myProfilPage {
+    margin-left: 0;
+  }
+
+  .posts-section2 {
+    margin-top: 20px;
+    margin-left: -40px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .myProfilHr {
+    background-color: #f4b31a;
+    width: 250px;
+    margin: 5px auto;
+    height: 4px;
+  }
+
+  #myProfilCard {
+    width: 250px;
+    height: 180px;
+  }
+  #myProfilCard2 {
+    width: 250px;
+    height: 160px;
+  }
+}
