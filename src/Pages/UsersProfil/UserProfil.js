@@ -258,7 +258,7 @@ function UserProfil() {
             <div>
               <div className="userProfilCard">
                 {decks.map((deck) => (
-                  <div className="card-section" key={deck._id}>
+                  <div className="card-section2" key={deck._id}>
                     <Card
                      id="userProfilC"
                       key={deck._id}

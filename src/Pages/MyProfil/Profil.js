@@ -496,7 +496,7 @@ function Profil() {
           {postMode && (
           <div className="posts-section2">
             {decks.map((deck) => (
-              <div className="card-section" key={deck._id}>
+              <div className="card-section1" key={deck._id}>
                 <Card
                 id="myProfilCard"
                   key={deck._id}
@@ -581,7 +581,7 @@ function Profil() {
           {saveMode && (
           <div className="posts-section2">
             {saved.map((deck) => (
-              <div className="card-section" key={deck._id}>
+              <div className="card-section1" key={deck._id}>
                  <Card
                   id="myProfilCard2"
                        key={deck._id}
