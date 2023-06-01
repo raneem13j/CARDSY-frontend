@@ -157,7 +157,7 @@ function Deck() {
         // Check if the saved item exists with the specified userId and deckId
         const isItemSaved = response.data.some(
           (item) =>
-            item.user_id === userId && item.deck_id._id === deckId.deckId
+            item.user_id._id === userId && item.deck_id._id === deckId.deckId
         );
         // console.log(isItemSaved);
         setShowBookmarkBorder(!isItemSaved);
@@ -168,6 +168,7 @@ function Deck() {
     }
     fetchData();
   }, []);
+
 
   return (
     <>

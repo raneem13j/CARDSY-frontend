@@ -594,25 +594,25 @@ function Profil() {
                       >
                         <CardContent key={deck._id}>
                           <Typography style={{ color: "#2c6487" }} variant="h5" component="div" key={deck.id}>
-                            {deck.name}
+                            {deck.deck_id.name}
                           </Typography>
-                          <Typography variant="body2">{deck.level}</Typography>
+                          <Typography variant="body2">{deck.deck_id.level}</Typography>
                           <Link className="cardLink" to={`/profil/${deck.user_id !== undefined ? deck.user_id.username : null}`}>
                           <Typography variant="body2" >
-                             {deck.user_id !== undefined ? deck.user_id.username : null}
+                             {deck.deck_id.user_id !== undefined ? deck.deck_id.user_id.username : null}
                           </Typography>
                           </Link>
                           <Typography variant="body2">
-                            {deck.card_count} Cards
+                            {deck.deck_id.card_count} Cards
                           </Typography>
                         </CardContent>
                         <CardActions>
-                          <Link className="cardLink" to={`/deck/${deck._id}`}>
+                          <Link className="cardLink" to={`/deck/${deck.deck_id._id}`}>
                             <Button size="small">Test your self</Button>
                           </Link>
                           <IconButton
                             aria-label="like"
-                            onClick={(e) => handleThumbUpClick(e, deck._id, deck.voteType)}
+                            onClick={(e) => handleThumbUpClick(e, deck.deck_id._id, deck.voteType)}
                           >
                             <ThumbUpIcon
                               style={{
@@ -627,7 +627,7 @@ function Profil() {
                           </IconButton>
                           <IconButton
                             aria-label="like"
-                            onClick={(e) => handleThumbDownClick(e, deck._id, deck.voteType)}
+                            onClick={(e) => handleThumbDownClick(e, deck.deck_id._id, deck.voteType)}
                           >
                             <ThumbDownIcon
                               style={{
