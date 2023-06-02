@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./login.css";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 
 function Login() {
@@ -8,7 +8,7 @@ function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
   const [error, setError] = useState(null);
 
   const handleSignupClick = () => {
@@ -42,20 +42,22 @@ function Login() {
       const data = await response.json();
       sessionStorage.setItem("token", data.token);
       sessionStorage.setItem("Id", data.user);
+      sessionStorage.setItem("role", data.role);
 
       // Decode the JWT token
       const decodedToken = jwt_decode(data.token);
-      console.log(decodedToken);
+      // console.log(decodedToken);
 
 
-      if (data.role === "User") {
-        navigate("/home");
-      }
-
+      window.location.href = "/home";
+      // Show success alert
+      alert("You have registered successfully");
       console.log("Registration successful");
     } catch (error) {
       setError(error.message);
       console.error(error);
+       // Show error alert
+       alert("Registration failed");
     }
   };
 
@@ -71,7 +73,7 @@ function Login() {
         body: JSON.stringify({ email, password }),
       });
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       if (!response.ok) {
         throw new Error(data.message);
       }
@@ -81,14 +83,16 @@ function Login() {
       
        // Decode the JWT token
       const decodedToken = jwt_decode(data.token);
-      console.log(decodedToken);
+      // console.log(decodedToken);
 
       window.location.href = "/home";
-      
+      alert("You have loged in successfully");
       console.log("Login successful");
     } catch (error) {
       setError(error.message);
       console.error(error);
+       // Show error alert
+      alert("Log in failed");
     }
   };
 

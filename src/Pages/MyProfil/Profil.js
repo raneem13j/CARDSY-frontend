@@ -262,7 +262,7 @@ function Profil() {
       );
       setFollowers(response.data);
 
-      // console.log("jjj", response.data);
+      console.log("jjj", response.data);
     } catch (error) {
       console.log(error);
     }
@@ -285,7 +285,7 @@ function Profil() {
       );
       setFollowing(response.data);
 
-      // console.log("jjj", response.data);
+      console.log("jjj", response.data);
     } catch (error) {
       console.log(error);
     }
@@ -308,7 +308,7 @@ function Profil() {
       );
       setUnFollowUser("sucssful", response.data);
 
-      // console.log(response.data);
+      console.log(response.data);
     } catch (error) {
       console.error(error);
     }
