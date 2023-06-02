@@ -21,7 +21,11 @@ function Deck() {
   const [saved, setSaved] = useState([]);
   const [showBookmarkBorder, setShowBookmarkBorder] = useState(true);
   const [showBookmark, setShowBookmark] = useState(false);
-  const [ deck, setDeck] = useState([]);
+  const [deck, setDeck] = useState([]);
+  const [isFollowing, setIsFollowing] = useState("");
+  const [unFollow, setUnFollow] = useState([]);
+  const [follow, setFollow] = useState([]);
+
 
   const settings = {
     className: "center",
@@ -68,7 +72,6 @@ function Deck() {
         );
         setCards(response.data);
         setCardCount(response.data.length);
-        
       } catch (error) {
         console.log(error);
       }
@@ -79,9 +82,11 @@ function Deck() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get(`https://cardsy.onrender.com/deck/${deckId.deckId}`);
+        const response = await axios.get(
+          `https://cardsy.onrender.com/deck/${deckId.deckId}`
+        );
         setDeck(response.data);
-        // console.log(response.data)
+        console.log(response.data);
       } catch (error) {
         console.log(error);
       }
@@ -169,6 +174,62 @@ function Deck() {
     fetchData();
   }, []);
 
+  const handleFollowTopic = async (topicId) =>{
+     // console.log("me", userId);
+
+     try {
+      const response = await axios.post(
+        `https://cardsy.onrender.com/topicfollower/follow/${userId}`,
+        {
+          topic_id: topicId,
+        }
+      );
+      setFollow("sucssful", response.data);
+      setIsFollowing(true);
+      // console.log("setfollow ", response.data);
+
+      // console.log(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+
+
+
+  }
+  const handleUnFollowTopic = async (topicId) =>{
+    
+    try {
+      const response = await axios.post(
+        `https://cardsy.onrender.com/topicfollower/unfollow/${userId}`,
+        {
+          topic_id: topicId,
+        }
+      );
+      setUnFollow("sucssful", response.data);
+      setIsFollowing(false);
+
+      // console.log("setunfollow ", response.data);
+
+      // console.log(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+
+
+  }
+
+
+  const handleFollowState = async (e, topicId) => {
+    // console.log(isFollowing);
+    // console.log("dssd", topicId)
+    e.preventDefault();
+    if (isFollowing === true) {
+      handleUnFollowTopic(topicId);
+    } else {
+      handleFollowTopic(topicId);
+    }
+  };
+
 
   return (
     <>
@@ -176,10 +237,15 @@ function Deck() {
       <div className="deckPage">
         <Search />
         <div className="deckSection">
-          <div><p className="dectName">{deck.name}</p></div>
           <div>
-             <BookmarkBorderIcon
-               id="bookmark-icon"
+            <p className="dectName">{deck.name}</p>
+            <p className="dectName">{deck.topic_id ? deck.topic_id.topic : null}</p>
+            <button className="deckButton" onClick={(e) => handleFollowState(e, deck.topic_id ? deck.topic_id._id : null)}>{isFollowing ? "Following" : "Follow"}</button>
+           
+          </div>
+          <div>
+            <BookmarkBorderIcon
+              id="bookmark-icon"
               style={{
                 color: "#2c6487",
                 width: "2.5rem",
@@ -198,7 +264,6 @@ function Deck() {
               }}
               onClick={(e) => handelUnSavePost(e)}
             />
-             
           </div>
           <div className="slik">
             <Slider ref={sliderRef} {...settings}>
@@ -242,4 +307,3 @@ function Deck() {
 }
 
 export default Deck;
-

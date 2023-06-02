@@ -111,6 +111,19 @@
   margin-right: 1000px;
 
 }
+.deckButton{
+
+  padding: 7px;
+  margin: 5px;
+  color: #2c6487;
+  border: #f4b31a solid 2px;
+  border-radius: 12px;
+}
+.deckButton:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #2c6487;
+}
 
 @media( max-width: 1200px){
 
