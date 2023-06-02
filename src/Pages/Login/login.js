@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./login.css";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 
 function Login() {
@@ -8,7 +8,7 @@ function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
-  // let navigate = useNavigate();
+  let navigate = useNavigate();
   const [error, setError] = useState(null);
 
   const handleSignupClick = () => {
@@ -49,7 +49,9 @@ function Login() {
       // console.log(decodedToken);
 
 
-      window.location.href = "/home";
+      if (data.role === "user") {
+        navigate("/home");
+      }
       // Show success alert
       alert("You have registered successfully");
       console.log("Registration successful");
