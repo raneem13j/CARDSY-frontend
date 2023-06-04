@@ -490,7 +490,7 @@
     display: grid;
     grid-template-columns: 1fr;
     
-    margin-right:-20px;
+    margin-right:0px;
    }
 
 .head{
@@ -498,7 +498,8 @@
 }
 .homeFilter{
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 20px;
+  
 
 }
 .head hr{
