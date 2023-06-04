@@ -433,15 +433,14 @@
 
 @media screen and (max-width: 700px) {
 
-  .homePage {margin-left: 0;
-  padding:0;}
+  .homePage {margin-left: 0;}
 
   .profil-minisection{
     display: none;
   }
   .H-filter{
     margin-left: -10px;
-    padding-right: 0;
+    padding-right:0;
     width:90%
   }
  
@@ -499,7 +498,7 @@
 }
 .homeFilter{
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 50px;
   
 
 }
@@ -514,14 +513,13 @@
 @media screen and (max-width: 600px) {
 
  
-  .homePage {margin-left: 0;
-    padding:0;}
+  .homePage {margin-left: 0;}
  
   .profil-minisection{
     display: none;
   }
   .H-filter{
-    margin-left: 0;
+    margin-left:0;
     padding-right: 0;
     width:90%
   }
@@ -572,7 +570,7 @@
     display: grid;
     grid-template-columns: 1fr;
     
-    margin-right:-10px;
+    margin-right:0px;
    }
 
 .head{
@@ -580,7 +578,7 @@
 }
 .homeFilter{
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 80px;
 
 }
 .head hr{
@@ -595,8 +593,7 @@
 @media screen and (max-width: 500px) {
 
  
-  .homePage {margin-left: 0;
-    padding:0;}
+  .homePage {margin-left: 0;}
 
   .profil-minisection{
     display: none;
@@ -661,7 +658,7 @@
 }
 .homeFilter{
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 30px;
 
 }
 .head hr{
@@ -674,13 +671,12 @@
 }
 
 @media screen and (max-width: 400px) {
-  .homePage {margin-left: 0;
-    padding:0;}
+  .homePage {margin-left: 0;}
   .profil-minisection{
     display: none;
   }
   .H-filter{
-    margin-left: 0;
+    margin-left: 10px;
     padding-right: 0;
     width:80%
   }
@@ -688,7 +684,7 @@
 
   .filter-list{
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr ;
+   grid-template-columns: 1fr 1fr 1fr ;
 
     
   }
@@ -731,7 +727,7 @@
     display: grid;
     grid-template-columns: 1fr;
     
-    margin-right:0;
+    margin-left: -5px;
    }
 
 .head{
@@ -739,7 +735,7 @@
 }
 .homeFilter{
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 0px;
 
 }
 .head hr{
