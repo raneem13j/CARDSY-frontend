@@ -85,10 +85,7 @@
   font-size: 33px;
   color:#2c6487;
 }
-.progres-bar {
-  width: 850px;
 
-}
 .card-count{
   color:#2c6487;
   font-size: 20px;
@@ -96,6 +93,7 @@
 }
 
 .progres-bar {
+  width: 850px;
   margin: 30px auto;
 }
 .cardCount{
@@ -247,6 +245,10 @@
     font-size: 17px;
     color:#2c6487;
   }
+  .slick-slider .slick-prev,
+  .slick-slider .slick-next {
+    display: none;
+  }
 
 
 }
@@ -259,13 +261,13 @@
     margin-right: 0px;
   }
   .slik{
-    width: 280px;
+    width: 220px;
     
    } 
    .card-main{
     position: relative;
     width:80%;
-    height: 400px;
+    height: 350px;
     background:yellow;
     transition:.3s all ease;
     transform-style: preserve-3d;
@@ -278,12 +280,16 @@
   }
 
   .cardSection{
-    margin: 50px 20px 50px 20px;
+    margin: 50px 20px 10px 20px;
     display: grid;
     place-items:center;
     min-height:100dvh;
   
    }
+   .progres-bar {
+    width: 200px;
+    margin:10px 20px 30px 20px ;
+  }
    .card-back p {
     text-align: center;
     font-size: 17px;
@@ -308,13 +314,13 @@
   }
   
   .slik{
-    width: 250px;
+    width: 220px;
     
    } 
    .card-main{
     position: relative;
     width:80%;
-    height: 400px;
+    height: 350px;
     background:yellow;
     transition:.3s all ease;
     transform-style: preserve-3d;
@@ -343,6 +349,9 @@
     font-size: 17px;
     color:#2c6487;
   }
+  .progres-bar {
+    margin:10px 20px 30px 20px ;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -355,13 +364,13 @@
   }
   
   .slik{
-    width: 250px;
+    width: 220px;
     
    } 
    .card-main{
     position: relative;
     width:80%;
-    height: 400px;
+    height: 350px;
     background:yellow;
     transition:.3s all ease;
     transform-style: preserve-3d;
@@ -389,6 +398,9 @@
     text-align: center;
     font-size: 15px;
     color:#2c6487;
+  }
+  .progres-bar {
+    margin:10px 20px 30px 20px ;
   }
 
 }
