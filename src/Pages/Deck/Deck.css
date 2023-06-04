@@ -19,7 +19,7 @@
   margin: 20px 40px 20px 40px;
   display: grid;
   place-items:center;
-  min-height:100dvh;
+  /* min-height:100dvh; */
 
  }
 
