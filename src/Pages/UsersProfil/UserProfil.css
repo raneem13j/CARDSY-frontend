@@ -218,6 +218,30 @@
         width: 300px;
      }      
 }
+@media screen and (max-width: 420px) {
+    .userProfilPage {
+		margin-left: 0;
+	  }
+      .userProfilHr{
+        background-color: #f4b31a;
+        width: 350px;
+        margin: 5px auto;
+        height: 4px;      
+    }
+    .userProfil3{
+        display: flex;
+       justify-content: space-around;  
+    }
+    .userProfilCard{
+        margin-top: 30px;
+        margin-left:10px;
+        display: grid;
+        grid-template-columns: 1fr; 
+        }
+     #userProfilC{
+        width: 300px;
+     }      
+}
 @media screen and (max-width: 400px) {
     .userProfilPage {
 		margin-left: 0;
