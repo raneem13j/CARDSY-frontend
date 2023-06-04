@@ -5,7 +5,7 @@
 
 .userProfilHr{
     background-color: #f4b31a;
-    width: 1300px;
+    width: 1400px;
     margin: 5px auto;
     height: 4px;
       
@@ -26,7 +26,7 @@
    
 }
 .userProfilCard{
-  margin: 15px;
+  margin: 15px 40px 15px 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
 }
@@ -52,6 +52,7 @@
     .userProfilCard{
         margin-top: 30px;
         margin-left: 40px;
+        margin-left: 90px;
         display: grid;
         grid-template-columns: 1fr 1fr; 
        
@@ -74,7 +75,7 @@
     }
     .userProfilCard{
         margin-top: 30px;
-        margin-left: 40px;
+        margin-left: 80px;
         display: grid;
         grid-template-columns: 1fr 1fr; 
         }
@@ -95,12 +96,33 @@
     }
     .userProfilCard{
         margin-top: 30px;
-        margin-left: 50px;
+        margin-left: 0px;
         display: grid;
-        grid-template-columns: 1fr ; 
+        grid-template-columns: 1fr 1fr ; 
         }
      #userProfilC{
-        width: 400px;
+        width: 300px;
+     }  
+}
+@media screen and (max-width: 900px) {
+    .userProfilHr{
+        background-color: #f4b31a;
+        width: 600px;
+        margin: 5px auto;
+        height: 4px;      
+    }
+    .userProfil3{
+        display: flex;
+       justify-content: space-around;  
+    }
+    .userProfilCard{
+        margin-top: 30px;
+        margin-left: 120px;
+        display: grid;
+        grid-template-columns: 1fr  ; 
+        }
+     #userProfilC{
+        width: 300px;
      }  
 }
 @media screen and (max-width: 800px) {
@@ -116,7 +138,7 @@
     }
     .userProfilCard{
         margin-top: 30px;
-        margin-left: 90px;
+        margin-left: 60px;
         display: grid;
         grid-template-columns: 1fr; 
         }
@@ -140,12 +162,36 @@
     }
     .userProfilCard{
         margin-top: 30px;
-        margin-left: 50px;
+        margin-left: 70px;
         display: grid;
         grid-template-columns: 1fr; 
         }
      #userProfilC{
         width: 400px;
+     }      
+}
+@media screen and (max-width: 600px) {
+    .userProfilPage {
+		margin-left: 0;
+	  }
+      .userProfilHr{
+        background-color: #f4b31a;
+        width: 350px;
+        margin: 5px auto;
+        height: 4px;      
+    }
+    .userProfil3{
+        display: flex;
+       justify-content: space-around;  
+    }
+    .userProfilCard{
+        margin-top: 30px;
+        margin-left: 70px;
+        display: grid;
+        grid-template-columns: 1fr; 
+        }
+     #userProfilC{
+        width: 300px;
      }      
 }
 @media screen and (max-width: 500px) {
@@ -164,7 +210,7 @@
     }
     .userProfilCard{
         margin-top: 30px;
-        margin-left: 10px;
+        margin-left:20px;
         display: grid;
         grid-template-columns: 1fr; 
         }
