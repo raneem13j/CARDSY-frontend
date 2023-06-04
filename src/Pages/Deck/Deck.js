@@ -275,7 +275,7 @@ function Deck() {
       <div className="deckPage">
         <Search />
         <div className="deckSection">
-          <div>
+          <div className="RRR">
             <p className="dectName">{deck.name}</p>
             <p className="dectName">{deck.topic_id ? deck.topic_id.topic : null}</p>
             <button className="deckButton" onClick={(e) => handleFollowState(e, deck.topic_id ? deck.topic_id._id : null)}>{isFollowing ? "Following" : "Follow"}</button>
