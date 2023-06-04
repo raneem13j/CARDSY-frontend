@@ -27,7 +27,7 @@
   position: relative;
   width:92%;
   height: 450px;
-  background:yellow;
+  background:white;
   transition:.3s all ease;
   transform-style: preserve-3d;
 
@@ -37,7 +37,7 @@
 
 
 .card-main.flipped {
-  transform: rotateX(180deg);
+  transform: rotatex(180deg);
 }
 .flipped-text {
   transform: rotate(180deg);
@@ -188,7 +188,16 @@
     font-size: 25px;
     margin-right: 0px;
   }
-
+  .card-back p {
+    text-align: center;
+    font-size: 20px;
+    color:white;
+  }
+  .card-front p {
+    text-align: center;
+    font-size: 20px;
+    color:#2c6487;
+  }
 
 
 }
@@ -203,17 +212,23 @@
     margin-right: 0px;
   }
   .slik{
-    width: 450px;
+    width: 300px;
     
    } 
    .card-main{
     position: relative;
     width:90%;
-    height: 200px;
+    height: 400px;
     background:yellow;
     transition:.3s all ease;
     transform-style: preserve-3d;
   } 
+  .card-main.flipped {
+    transform: rotatey(180deg);
+  }
+  .flipped-text {
+    transform: rotate(360deg);
+  }
 
   .cardSection{
     margin: 50px 20px 50px 20px;
@@ -222,7 +237,63 @@
     min-height:100dvh;
   
    }
+   .card-back p {
+    text-align: center;
+    font-size: 17px;
+    color:white;
+  }
+  .card-front p {
+    text-align: center;
+    font-size: 17px;
+    color:#2c6487;
+  }
 
+
+}
+@media screen and (max-width: 600px) {
+
+  .deckPage {margin-left: 0;}
+  .dectName{
+    color: #2c6487;
+    font-size: 25px;
+    margin-right: 0px;
+  }
+  .slik{
+    width: 280px;
+    
+   } 
+   .card-main{
+    position: relative;
+    width:80%;
+    height: 400px;
+    background:yellow;
+    transition:.3s all ease;
+    transform-style: preserve-3d;
+  } 
+  .card-main.flipped {
+    transform: rotatey(180deg);
+  }
+  .flipped-text {
+    transform: rotate(360deg);
+  }
+
+  .cardSection{
+    margin: 50px 20px 50px 20px;
+    display: grid;
+    place-items:center;
+    min-height:100dvh;
+  
+   }
+   .card-back p {
+    text-align: center;
+    font-size: 17px;
+    color:white;
+  }
+  .card-front p {
+    text-align: center;
+    font-size: 17px;
+    color:#2c6487;
+  }
 
 
 }
@@ -236,21 +307,27 @@
     margin-right: 0px;
   }
   
-   .slik{
-    width: 350px;
+  .slik{
+    width: 250px;
     
    } 
    .card-main{
     position: relative;
-    width:90%;
-    height: 200px;
+    width:80%;
+    height: 400px;
     background:yellow;
     transition:.3s all ease;
     transform-style: preserve-3d;
   } 
+  .card-main.flipped {
+    transform: rotatey(180deg);
+  }
+  .flipped-text {
+    transform: rotate(360deg);
+  }
 
   .cardSection{
-    margin: 50px 20px 50px 20px;
+    margin: 50px 10px 20px 20px;
     display: grid;
     place-items:center;
     min-height:100dvh;
@@ -258,12 +335,12 @@
    }
   .card-back p {
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
     color:white;
   }
   .card-front p {
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
     color:#2c6487;
   }
 }
@@ -277,21 +354,27 @@
     margin-right: 0px;
   }
   
-   .slik{
-    width: 290px;
+  .slik{
+    width: 250px;
     
    } 
    .card-main{
     position: relative;
-    width:90%;
-    height: 150px;
+    width:80%;
+    height: 400px;
     background:yellow;
     transition:.3s all ease;
     transform-style: preserve-3d;
   } 
+  .card-main.flipped {
+    transform: rotatey(180deg);
+  }
+  .flipped-text {
+    transform: rotate(360deg);
+  }
 
   .cardSection{
-    margin: 40px 20px 20px 20px;
+    margin: 40px 10px 10px 20px;
     display: grid;
     place-items:center;
     min-height:100dvh;
@@ -299,12 +382,12 @@
    }
   .card-back p {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     color:white;
   }
   .card-front p {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     color:#2c6487;
   }
 

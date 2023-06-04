@@ -37,6 +37,19 @@ function Deck() {
     dots: false,
     afterChange: () => setUpdateCount((prevCount) => prevCount + 1),
     beforeChange: (current, next) => setSlideIndex(next),
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          centerMode: false,
+        }
+      },
+    ]
+
   };
 
   useEffect(() => {
@@ -291,7 +304,7 @@ function Deck() {
             />
           </div>
           <div className="slik">
-            <Slider ref={sliderRef} {...settings}>
+            <Slider ref={sliderRef} {...settings}   className="slick-slider">
               {cards.map((card, index) => (
                 <div className="cardSection" key={index}>
                   <div className="card-main">
