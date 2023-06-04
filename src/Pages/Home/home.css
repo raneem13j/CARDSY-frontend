@@ -509,7 +509,85 @@
   
  }
 }
+@media screen and (max-width: 600px) {
 
+ 
+  .homePage {margin-left: 0;}
+ 
+  .profil-minisection{
+    display: none;
+  }
+  .H-filter{
+    margin-left: 0;
+    padding-right: 0;
+    width:90%
+  }
+ 
+
+  .filter-list{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+
+    
+  }
+  .li-filter{
+    padding: 3px;
+   margin: 3px;
+   color:#2c6487;
+   
+   border-radius: 12px;
+    
+  }
+  
+  .li-map {
+    padding-top: 3px;
+    padding-bottom: 3px;
+   margin: 5px;
+   color:#2c6487;
+   border:#f4b31a solid 2px;
+   border-radius: 12px;
+   text-align: center;
+  
+  }
+  .clear-filters-button{
+    padding-top: 3px;
+    padding-bottom: 3px;
+   margin: 5px;
+   color:#2c6487;
+   border:#f4b31a solid 2px;
+   border-radius: 12px;
+    font-size: 16px;
+  }
+
+  .no-decks-message{
+    color: #2c6487;
+    font-size: 15px;
+    width: 350px;
+  } 
+  
+  .posts-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    margin-right:0;
+   }
+
+.head{
+  width: 90%;
+}
+.homeFilter{
+  margin-top: 20px;
+  margin-left: 50px;
+
+}
+.head hr{
+  background-color: #f4b31a;
+  width:350px;
+  margin: 10px 0px 30px 0px;
+  height: 4px;
+}
+
+}
 
 @media screen and (max-width: 500px) {
 
@@ -528,7 +606,7 @@
 
   .filter-list{
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+   grid-template-columns: 1fr 1fr 1fr 1fr ;
 
     
   }
