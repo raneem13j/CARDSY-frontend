@@ -48,12 +48,15 @@ function Login() {
       const decodedToken = jwt_decode(data.token);
       // console.log(decodedToken);
 
-
-      if (data.role === "user") {
-        navigate("/home");
-      }
-      // Show success alert
       alert("You have registered successfully");
+
+
+      // if (data.role === "user") {
+      //   navigate("/Home");
+      // }
+
+      window.location.href = "/Home";
+     
       console.log("Registration successful");
     } catch (error) {
       setError(error.message);
@@ -86,9 +89,9 @@ function Login() {
        // Decode the JWT token
       const decodedToken = jwt_decode(data.token);
       // console.log(decodedToken);
-
-      window.location.href = "/home";
       alert("You have loged in successfully");
+      window.location.href = "/Home";
+      // alert("You have loged in successfully");
       console.log("Login successful");
     } catch (error) {
       setError(error.message);

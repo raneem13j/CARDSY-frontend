@@ -14,9 +14,9 @@ function Lo() {
   return (
     <div className='loSidebar'>
       <p className='loSidebarLogo'>CARDSY</p>
-      <Link className='loSidebarLink' to="/home">Home</Link>
-      <Link className='loSidebarLink' to="/topic">Topics</Link>
-      <Link className='loSidebarLink' to="/myprofil">My Profile</Link>
+      <Link className='loSidebarLink' to="/Home">Home</Link>
+      <Link className='loSidebarLink' to="/Topic">Topics</Link>
+      <Link className='loSidebarLink' to="/Myprofil">My Profile</Link>
       <Link className='loSidebarLink' onClick={authenticated && handleLogout} to="/">Logout</Link>
     </div>
   )

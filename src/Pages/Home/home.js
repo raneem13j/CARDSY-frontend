@@ -483,7 +483,7 @@ function Home() {
                               </Typography>
                               <Link
                                 className="cardLink"
-                                to={`/profil/${
+                                to={`/Profil/${
                                   deck.user_id !== undefined
                                     ? deck.user_id.username
                                     : null
@@ -502,7 +502,7 @@ function Home() {
                             <CardActions>
                               <Link
                                 className="cardLink"
-                                to={`/deck/${deck._id}`}
+                                to={`/Deck/${deck._id}`}
                               >
                                 <Button size="small">Test your self</Button>
                               </Link>
@@ -557,6 +557,7 @@ function Home() {
                     {latest.map((deck, i) => (
                       <div className="card-section" key={i}>
                         <Card
+                         id="home"
                           key={i}
                           sx={{
                             minWidth: 275,
@@ -580,7 +581,7 @@ function Home() {
                             </Typography>
                             <Link
                               className="cardLink"
-                              to={`/profil/${
+                              to={`/Profil/${
                                 deck.user_id !== undefined
                                   ? deck.user_id.username
                                   : null
@@ -597,7 +598,7 @@ function Home() {
                             </Typography>
                           </CardContent>
                           <CardActions>
-                            <Link className="cardLink" to={`/deck/${deck._id}`}>
+                            <Link className="cardLink" to={`/Deck/${deck._id}`}>
                               <Button size="small">Test your self</Button>
                             </Link>
                             <IconButton
@@ -646,6 +647,7 @@ function Home() {
                     {order.map((deck, i) => (
                       <div className="card-section" key={i}>
                         <Card
+                         id="home"
                           key={i}
                           sx={{
                             minWidth: 275,
@@ -668,7 +670,7 @@ function Home() {
                             </Typography>
                             <Link
                               className="cardLink"
-                              to={`/profil/${
+                              to={`/Profil/${
                                 deck.username !== undefined
                                   ? deck.username
                                   : null
@@ -685,7 +687,7 @@ function Home() {
                             </Typography>
                           </CardContent>
                           <CardActions>
-                            <Link className="cardLink" to={`/deck/${deck._id}`}>
+                            <Link className="cardLink" to={`/Deck/${deck._id}`}>
                               <Button size="small">Test your self</Button>
                             </Link>
                             <IconButton

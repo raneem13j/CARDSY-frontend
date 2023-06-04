@@ -12,7 +12,7 @@
 .profil-minisection{
   margin-top: 150px;
   margin-bottom: 20px;
-  margin-left: 150px;
+  margin-left: 110px;
   margin-right: 20px;
   background-color: white;
   width: 300px;
@@ -327,6 +327,14 @@
    color:#2c6487;
    border:#f4b31a solid 2px;
    border-radius: 12px;
+  }
+  .clear-filters-button{
+    padding: 7px;
+   margin: 5px;
+   color:#2c6487;
+   border:#f4b31a solid 2px;
+   border-radius: 12px;
+    font-size: 16px;
   }
   .head{
     width: 50%;

@@ -12,7 +12,7 @@
 }
 
 .slik{
-  width:850px;
+  width:1000px;
  }
 
  .cardSection{
@@ -26,7 +26,7 @@
  .card-main{
   position: relative;
   width:92%;
-  height: 380px;
+  height: 450px;
   background:yellow;
   transition:.3s all ease;
   transform-style: preserve-3d;

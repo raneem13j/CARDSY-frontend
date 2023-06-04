@@ -281,7 +281,7 @@ function UserProfil() {
                         <Typography variant="body2">{deck.level}</Typography>
                         <Link
                           className="cardLink"
-                          to={`/profil/${
+                          to={`/Profil/${
                             deck.user_id !== undefined
                               ? deck.user_id.username
                               : null
@@ -298,7 +298,7 @@ function UserProfil() {
                         </Typography>
                       </CardContent>
                       <CardActions>
-                        <Link className="cardLink" to={`/deck/${deck._id}`}>
+                        <Link className="cardLink" to={`/Deck/${deck._id}`}>
                           <Button size="small">Test your self</Button>
                         </Link>
                         <IconButton

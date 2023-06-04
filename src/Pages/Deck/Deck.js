@@ -86,7 +86,7 @@ function Deck() {
           `https://cardsy.onrender.com/deck/${deckId.deckId}`
         );
         setDeck(response.data);
-        console.log(response.data);
+        // console.log(response.data);
       } catch (error) {
         console.log(error);
       }
@@ -173,6 +173,31 @@ function Deck() {
     }
     fetchData();
   }, []);
+
+
+  const fetchFollowersTopic = async () => {
+    // console.log(userId);
+    try {
+      const response = await axios.get(
+        `https://cardsy.onrender.com/topicfollower/${userId}`
+      );
+      const followers = response.data;
+      if (deck && deck.topic_id && deck.topic_id._id) {
+        setIsFollowing(
+          response.data.some((follower) => follower.topic_id._id === deck.topic_id._id)
+        );
+      }
+      // console.log("jjj", deck.topic_id._id)
+      // console.log("Followers:", followers);
+      // console.log("dd", isFollowing);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    fetchFollowersTopic();
+  }, [follow, unFollow, userId, deck]);
+
 
   const handleFollowTopic = async (topicId) =>{
      // console.log("me", userId);

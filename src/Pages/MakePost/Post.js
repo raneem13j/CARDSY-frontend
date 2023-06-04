@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import { useParams } from "react-router";
 import axios from "axios";
 import "./Post.css";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Lo from "../../Components/Test/Lo";
 import Search from "../../Components/Search/search";
@@ -145,18 +144,15 @@ function Post() {
           );
         }
         newCards.push(cardResponse.data);
-        console.log("Card created:", cardResponse.data);
+        // console.log("Card created:", cardResponse.data);
       }
       setCards(newCards);
-      console.log("Deck created:", deckResponse.data);
-      toast.success("Post is created  successfully", {
-        className: "toast success",
-      });
+      // console.log("Deck created", deckResponse.data);
+      alert("Deck created successfully");
+     
     } catch (error) {
       console.log(error);
-      toast.error(" Something went wrong", {
-        className: "toast error",
-      });
+     
     }
   };
 

@@ -262,7 +262,7 @@ function Profil() {
       );
       setFollowers(response.data);
 
-      console.log("jjj", response.data);
+      // console.log("jjj", response.data);
     } catch (error) {
       console.log(error);
     }
@@ -285,7 +285,7 @@ function Profil() {
       );
       setFollowing(response.data);
 
-      console.log("jjj", response.data);
+      // console.log("jjj", response.data);
     } catch (error) {
       console.log(error);
     }
@@ -382,7 +382,7 @@ function Profil() {
                       {/* <h3>Followers</h3> */}
                       {followers.map((item, i) => (
                         <Link
-                          to={`/profil/${item.follower.username}`}
+                          to={`/Profil/${item.follower.username}`}
                           className="followPopup2"
                           key={i}
                         >
@@ -436,7 +436,7 @@ function Profil() {
                   </PopupProfil>
                 </div>
                 <div className="btn2">
-                  <Link className="cardLink" to={`/post/${userId}?edit=false`}>
+                  <Link className="cardLink" to={`/Post/${userId}?edit=false`}>
                     <button className="myProfilButton">Add Post</button>
                   </Link>
                   <button
@@ -527,7 +527,7 @@ function Profil() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Link className="cardLink" to={`/deck/${deck._id}`}>
+                    <Link className="cardLink" to={`/Deck/${deck._id}`}>
                       <Button size="small">Test your self</Button>
                     </Link>
                     <IconButton
@@ -568,7 +568,7 @@ function Profil() {
                       <DeleteIcon className="delete-icon" />
                     </IconButton>
                     <IconButton style={{ marginLeft: isMobile ? "0" : "70px" }}>
-                        <Link className="cardLink" to={`/post/${deck._id}?edit=true`}>
+                        <Link className="cardLink" to={`/Post/${deck._id}?edit=true`}>
                             <EditIcon style={{ color: "#2c6487"}}/>
                           </Link>
                     </IconButton>
@@ -597,7 +597,7 @@ function Profil() {
                             {deck.deck_id.name}
                           </Typography>
                           <Typography variant="body2">{deck.deck_id.level}</Typography>
-                          <Link className="cardLink" to={`/profil/${deck.user_id !== undefined ? deck.user_id.username : null}`}>
+                          <Link className="cardLink" to={`/Profil/${deck.user_id !== undefined ? deck.user_id.username : null}`}>
                           <Typography variant="body2" >
                              {deck.deck_id.user_id !== undefined ? deck.deck_id.user_id.username : null}
                           </Typography>
@@ -607,7 +607,7 @@ function Profil() {
                           </Typography>
                         </CardContent>
                         <CardActions>
-                          <Link className="cardLink" to={`/deck/${deck.deck_id._id}`}>
+                          <Link className="cardLink" to={`/Deck/${deck.deck_id._id}`}>
                             <Button size="small">Test your self</Button>
                           </Link>
                           <IconButton
