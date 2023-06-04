@@ -209,12 +209,12 @@
     margin-right: 0px;
   }
   .slik{
-    width: 300px;
-    
+    width: 320px;
+    margin-right: 30px;
    } 
    .card-main{
     position: relative;
-    width:90%;
+    width:80%;
     height: 400px;
     background:yellow;
     transition:.3s all ease;
@@ -228,7 +228,7 @@
   }
 
   .cardSection{
-    margin: 50px 20px 50px 20px;
+    margin: 20px 80px 20px 5px;
     display: grid !important;
     place-items:center;
    
@@ -244,10 +244,7 @@
     font-size: 17px;
     color:#2c6487;
   }
-  .slick-slider .slick-prev,
-  .slick-slider .slick-next {
-    display: none;
-  }
+
 
 
 }
@@ -260,8 +257,8 @@
     margin-right: 0px;
   }
   .slik{
-    width: 220px;
-    
+    width: 250px;
+    margin-right: 20px;
    } 
    .card-main{
     position: relative;
@@ -279,7 +276,7 @@
   }
 
   .cardSection{
-    margin: 50px 20px 10px 20px;
+    margin: 50px 20px 10px 5px;
     display: grid !important;
     place-items:center;
    
