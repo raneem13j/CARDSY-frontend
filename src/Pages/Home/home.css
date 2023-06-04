@@ -684,7 +684,7 @@
 
   .filter-list{
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr ;
+   grid-template-columns: 1fr 1fr 1fr 1fr ;
 
     
   }
@@ -727,8 +727,8 @@
     display: grid;
     grid-template-columns: 1fr;
     
-    margin-left: -5px;
-   }
+margin-left: 20px;
+  }
 
 .head{
   width: 90%;
@@ -740,8 +740,8 @@
 }
 .head hr{
   background-color: #f4b31a;
-  width:295px;
-  margin: 10px 0px 30px 0px;
+  width:300px;
+  margin: 10px 0px 30px 30px;
   height: 4px;
 }
 #home{
