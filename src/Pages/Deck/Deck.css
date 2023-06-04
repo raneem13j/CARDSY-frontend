@@ -19,7 +19,6 @@
   margin: 20px 40px 20px 40px;
   display: grid;
   place-items:center;
-  /* min-height:100dvh; */
 
  }
 
@@ -230,9 +229,9 @@
 
   .cardSection{
     margin: 50px 20px 50px 20px;
-    display: grid;
+    display: grid !important;
     place-items:center;
-    min-height:100dvh;
+   
   
    }
    .card-back p {
@@ -281,9 +280,9 @@
 
   .cardSection{
     margin: 50px 20px 10px 20px;
-    display: grid;
+    display: grid !important;
     place-items:center;
-    min-height:100dvh;
+   
   
    }
    .progres-bar {
@@ -334,9 +333,9 @@
 
   .cardSection{
     margin: 50px 10px 20px 20px;
-    display: grid;
+    display: grid !important;
     place-items:center;
-    min-height:100dvh;
+ 
   
    }
   .card-back p {
@@ -384,9 +383,9 @@
 
   .cardSection{
     margin: 40px 10px 10px 20px;
-    display: grid;
+    display: grid !important;
     place-items:center;
-    min-height:100dvh;
+    
   
    }
   .card-back p {
